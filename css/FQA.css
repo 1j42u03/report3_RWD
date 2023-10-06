@@ -1,0 +1,91 @@
+div.fqa {
+  display: inline-block;
+  width: 99%;
+  cursor: pointer;
+  margin: 8px;
+  overflow: hidden;
+}
+
+div.fqa:hover>div.fqaAns {
+  display: block;
+  font-size: 20px;
+}
+
+div.fqaTitle {
+  border: 1px solid #ED7D31;
+  display: flex;
+  font-size: 40px;
+  width: 100%;
+  /* position: relative; */
+
+}
+
+div.fqaTitle h4.fqaNum {
+  width: 20%;
+  padding: 8px;
+  /* border: 1px solid red; */
+  border-top: 0;
+  /* position: absolute; */
+}
+
+h4.fqaTopic+h4.fqaNum,
+div.fqaTitle h4.fqaNum:hover {
+  background-color: #ED7D31;
+  color: white;
+}
+
+
+
+div.fqaTitle h4.fqaTopic {
+  width: 80%;
+  padding: 8px;
+  border-left: 1px solid #ED7D31;
+  border-top: 0;
+  /* position: absolute; */
+}
+
+div.fqaAns {
+  border-top: 0;
+  border: 1px solid #ED7D31;
+  background-color: #FFC76C;
+  display: none;
+  padding: 8px;
+}
+
+
+
+/* 
+========test========== */
+
+
+
+
+/* 
+div.fqa {
+  border: 1px solid red;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+
+div.fqaTitle {
+  display: flex;
+  font-size: 40px;
+}
+
+div h4.fqaNum {
+  width: 20%;
+  border-right: 1px solid red;
+}
+
+div h4.fqaTopic {
+  width: 80%;
+}
+
+div.fqaAns {
+  display: none;
+}
+
+div h4.fqaTopic :focus+div.fqaAns {
+  display: block;
+} */

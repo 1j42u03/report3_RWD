@@ -1,0 +1,199 @@
+/* =====header===== */
+div.pcheader {
+
+  margin: 0 auto;
+  display: flex;
+}
+
+
+div.pcTitle {
+  padding: 40px;
+  padding-left: 30%;
+
+}
+
+div.pcheader div.btn {
+  /* display: inline-block; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+}
+
+@media screen and (max-width: 767.98px) {
+  div.pcTitle {
+    font-size: 30px;
+  }
+}
+
+/* @media (max-width:575.98px) {
+
+  div.pcTitle {
+    font-size: 30px;
+  }
+} */
+
+@media screen and (max-width: 767.98px) {
+  div.pcheader div.btn {
+    margin: 2px;
+    padding: 2px;
+    font-size: 8px;
+  }
+}
+
+/* =====logo===== */
+div.pcheader div.logo {
+  position: absolute;
+  left: 8px;
+  margin-top: 8px;
+  display: block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  animation-name: rotation, go;
+  animation-duration: 3s, 10s;
+  /* transform-origin: 50% 50% ; */
+  /* animation-fill-mode: forwards; */
+  /*依據動畫的次數或播放方向，停留在動畫播放結束後的最後一個影格*/
+  /* animation-direction: alternate; */
+
+  /* animation-iteration-count: 2; */
+}
+
+div.pcheader div.logo img {
+  max-width: 100%;
+}
+
+
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes go {
+  0% {
+    left: 0;
+  }
+
+  20% {
+    left: 20%;
+
+  }
+
+  /* 結尾需要寫-100%才能停在最後一個影格 */
+  /* 
+  100% {
+    left: 20%;
+  } */
+
+}
+
+@media (max-width:1199.98px) {
+  div.pcheader div.logo {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width:767.98px) {
+  div.pcheader div.logo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.pcheader div.btn div {
+  margin: 8px;
+  padding: 4px;
+  border: 1px solid #FFC76C;
+  background-color: #ED7D31;
+}
+
+.pcheader div.btn div:hover {
+  border: 2px solid white;
+}
+
+.pcheader div.btn div a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+}
+
+
+
+/* ====內文===== */
+
+h3 {
+  text-indent: 60px;
+  /*文章開頭空格*/
+  padding: 16px;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+section.pangolinContext {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+div.pangolinClass {
+  border: 3px solid black;
+  overflow: hidden;
+  margin: 4px;
+}
+
+div.pangolinClass:hover {
+  border: 3px solid #ED7D31;
+}
+
+
+div.bigPic {
+  display: block;
+  font-size: 0;
+  position: relative;
+  width: 310px;
+  height: 300px;
+  overflow: hidden;
+
+}
+
+div.bigPic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 填滿容器 */
+}
+
+
+div.pcPrice {
+  display: inline-block;
+  background-color: #ED7D31;
+  position: absolute;
+  z-index: 2;
+  font-size: 20px;
+  top: 10px;
+  left: 10px;
+  color: white;
+  padding: 4px;
+
+}
+
+
+
+div.pcText {
+  padding: 10px;
+}
+
+div.pcText h4 {
+  font-size: 20px;
+  margin: 4px;
+  color: black;
+}

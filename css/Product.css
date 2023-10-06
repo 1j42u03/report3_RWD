@@ -1,0 +1,45 @@
+section.product {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+
+}
+
+div.productItem {
+  border: 4px solid orange;
+  width: 400px;
+  overflow: hidden;
+}
+
+div.prdouctPic {
+  position: relative;
+  display: block;
+
+}
+
+div.prdouctPic img {
+  max-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  /* 填滿容器 */
+
+}
+
+div.prdouctPic a {
+  position: absolute;
+  /* border: 3px solid red; */
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+div.prdouctPic a img {
+  width: 30px;
+  height: 30px;
+}
+
+div.productItem h4 {
+  text-align: center;
+  font-size: 30px;
+  margin: 4px;
+}

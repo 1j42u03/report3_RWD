@@ -1,0 +1,76 @@
+section.about {
+  /* display: flex; */
+  display: grid;
+  grid-template-rows: auto;
+  /* ===fr===格線 */
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 40px;
+}
+
+
+
+section.about div.aboutDetail {
+  border: 1px solid orangered;
+  display: flex;
+  margin: 16px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+div.aboutPic {
+  font-size: 0;
+}
+
+div.aboutText {
+  margin: 8px;
+}
+
+div.aboutText h4 {
+  margin: 8px;
+  text-align: center;
+  font-size: 20px;
+}
+
+div.aboutPic img {
+  border: 1px solid red;
+  width: 350px;
+  height: 200px;
+  font-size: 0;
+}
+
+@media (max-width: 1199.98px) {
+  section.about {
+    /* ===fr===格線 */
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 8px;
+
+  }
+
+  section.about div.aboutDetail {
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  section.about div.aboutDetail {
+    flex-wrap: nowrap;
+  }
+
+  section.about {
+    /* ===fr===格線 */
+    grid-template-columns: 1fr;
+    gap: 16px 8px;
+  }
+
+  div.aboutPic {
+    margin: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  section.about div.aboutDetail {
+    flex-wrap: wrap;
+  }
+}

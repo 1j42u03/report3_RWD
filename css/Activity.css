@@ -1,0 +1,110 @@
+div.index {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+section.activity1 {
+  max-width: 800px;
+}
+
+section.activity1 div.calendar iframe {
+  width: 100%;
+  height: 600px;
+}
+
+
+
+/* =====頁簽==== */
+
+/* .activity2 {
+  border: 1px solid red;
+} */
+
+.tab_css {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.tab_css input {
+  display: none
+}
+
+
+.tab_css label {
+  margin: 0 8px;
+  margin-left: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  background: #ED7D31;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.tab_css label.tab1 {
+  margin-left: 40px;
+}
+
+.tab_content {
+  order: 1;
+  width: 100%;
+  display: none;
+  height: 560px;
+  border-bottom: 3px solid #ddd;
+  line-height: 1.6;
+  padding: 15px;
+  background-color: white;
+  max-width: 100%;
+  margin-left: 40px;
+}
+
+.tab_content li a {
+  color: #ED7D31;
+  font-weight: bolder;
+
+}
+
+.tab_content li a:hover {
+  border-bottom: 2px solid #FFC76C;
+}
+
+.tab_css input:checked+label,
+.tab_css label:hover {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.tab_css input:checked+label+.tab_content {
+  display: initial;
+  position: relative;
+
+}
+
+.tab_content {
+  height: 560px;
+}
+
+.tab_content img {
+  width: 30%;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  animation-name: tab_content;
+  animation-duration: 3s;
+}
+
+@keyframes tab_content {
+  0% {
+    bottom: 30px;
+  }
+
+  50% {
+    bottom: 80px;
+  }
+
+  100% {
+    bottom: 30px;
+  }
+
+}

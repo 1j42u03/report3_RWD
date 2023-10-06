@@ -1,0 +1,298 @@
+header {
+  /* border: 1px solid black; */
+  overflow: hidden;
+  max-width: 1440px;
+  /* background-color: #FFC76C; */
+  /* background-position: left top; */
+}
+
+header ul {
+  background-image: url(/images/background1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.header li.hh1 {
+  text-align: center;
+}
+
+header a.logo {
+  /* border: 1px solid red; */
+  display: inline-block;
+  overflow: hidden;
+  /* margin: 8px 40px; */
+  width: 200px;
+  height: 200px;
+
+}
+
+header a.logo>img {
+  margin-top: 10%;
+  max-width: 100%;
+
+}
+
+@media screen and (max-width: 991.98px) {
+  .header ul {
+    justify-content: space-between;
+    background-size: 90%;
+  }
+
+  header a.logo {
+    /* margin: 8px 20px; */
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .header ul {
+    justify-content: space-between;
+    background-size: 80%;
+  }
+
+  header a.logo {
+    margin: 8px 10px;
+    height: 160px;
+    width: 160px;
+  }
+
+}
+
+
+@media screen and (max-width: 575.98px) {
+  .header ul {
+    justify-content: space-between;
+    background-size: 70%;
+  }
+
+  header a.logo {
+    margin: 8px 10px;
+    height: 80px;
+    width: 80px;
+
+  }
+
+}
+
+.header ul>li.hh2 {
+  padding-top: 40px;
+}
+
+
+.header ul>li.hh3 {
+  display: flex;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 576.98px) {
+  .header ul>li.hh3 {
+    margin: 0;
+
+  }
+
+  .header ul>li.hh2 {
+    padding-top: 20px;
+  }
+}
+
+header h1.title,
+header h2.enName {
+  color: #ED7D31;
+}
+
+header h1.title {
+  font-size: 80px;
+  text-align: center;
+  margin: 0;
+}
+
+@media screen and (max-width: 1199.98px) {
+  header h1.title {
+    font-size: 60px;
+
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  header h1.title {
+    font-size: 50px;
+
+  }
+}
+
+
+@media screen and (max-width: 767.98px) {
+  header h1.title {
+    font-size: 40px;
+
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  header h1.title {
+    font-size: 30px;
+
+  }
+}
+
+header h2.enName {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+@media screen and (max-width: 1199.98px) {
+  header h2.enName {
+    font-size: 28px;
+
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  header h2.enName {
+    font-size: 20px;
+
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  header h2.enName {
+    font-size: 10px;
+
+  }
+}
+
+
+.header ul>li.hh3>span {
+  margin: 8px;
+  padding: 4px;
+  border: 1px solid #FFC76C;
+  background-color: #ED7D31;
+}
+
+.header ul>li.hh3>span:hover {
+  background-color: brown;
+}
+
+.header ul>li.hh3>span a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .header ul>li.hh3>span {
+    margin: 2px;
+    padding: 2px;
+    font-size: 8px;
+  }
+}
+
+
+
+
+/* ====查詢列表====== */
+
+
+
+nav {
+
+  margin: 0 auto;
+  max-width: 1440px;
+  background-color: wheat;
+
+}
+
+nav>ul {
+  list-style: none;
+  display: flex;
+
+
+}
+
+nav>ul>li {
+  /* border: 1px solid white; */
+  margin: 4px;
+  background-color: #ED7D31;
+  padding: 8px 32px;
+  text-align: center;
+
+}
+
+nav>ul>li:hover {
+  background-color: white;
+}
+
+nav>ul>li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  font-weight: bold;
+
+}
+
+nav>ul>li a:hover {
+  color: #ED7D31;
+  font-weight: bold;
+}
+
+nav li.navSearch {
+  padding: 0;
+}
+
+nav li.navSearch input {
+  height: 40px;
+  width: 200px;
+}
+
+nav.input {
+  border: 1px solid #FFC76C;
+}
+
+@media screen and (max-width: 1199.98px) {
+
+
+  nav>ul>li {
+    padding: 8px 24px;
+  }
+
+  nav>ul>li a {
+
+    font-size: 14px;
+    margin: 0;
+  }
+
+  nav li.navSearch input {
+    height: 40px;
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+
+  nav>ul>li {
+    padding: 8px 16px;
+  }
+
+  nav>ul>li a {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  nav li.navSearch input {
+    height: 40px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  ul.nav {
+    display: none;
+  }
+}

@@ -1,0 +1,193 @@
+/* ======remind====== */
+
+div.remind ul.bigRemind {
+  border: 1px solid #ED7D31;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+
+}
+
+li.remindSmall {
+  border: 4px double #ED7D31;
+  margin: 40px;
+  padding: 16px;
+  padding-top: 0;
+  /* flex-grow(平均分配內容物) ▼ */
+  flex: 1;
+}
+
+
+li.remindSmall h3 {
+  text-align: center;
+  font-size: 30px;
+  margin: 8px;
+}
+
+@media (max-width: 991.98px) {
+
+  li.remindSmall {
+    margin: 20px;
+  }
+
+  li.remindSmall h3 {
+    font-size: 20px;
+  }
+
+  ol.remindDetail {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  ol.remindDetail {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  li.remindSmall {
+    margin: 8px;
+  }
+
+  li.remindSmall h3 {
+    font-size: 16px;
+  }
+
+  ol.remindDetail {
+    font-size: 8px;
+  }
+}
+
+
+/* ====回顧==== */
+/* ====圖文區===== */
+div.review {
+  /* border: 1px solid blue; */
+  display: flex;
+  min-width: 100%;
+
+}
+
+div.reviewPic img {
+  overflow: hidden;
+  width: 350px;
+  height: 200px;
+  font-size: 0;
+}
+
+
+ul.reviewText {
+  /* border: 1px solid green; */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+ul.reviewText li {
+  border: 4px solid #ED7D31;
+  display: flex;
+  margin: 28px;
+
+
+}
+
+@media (max-width: 991.98px) {
+  ul.reviewText li {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* div.reviewPic img {
+    width: 400px;
+    height: 250px;
+  } */
+}
+
+
+ul.reviewText li div {
+  margin: 16px;
+}
+
+div.reviewPic {
+  width: 350px;
+  height: 200px;
+}
+
+
+div.reviewTitleTime {
+  display: flex;
+  margin: 8px 0;
+}
+
+div.reviewTitleTime h4 {
+  margin: 0;
+}
+
+a.reviewContinue {
+  color: #ED7D31;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+
+/* ====時間軸=== */
+div.reviewTime div.hslice h4 {
+  color: black;
+}
+
+div.review div.reviewTime {
+  /* border: 3px solid purple; */
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  /* position: fixed 元素會相對於瀏覽器視窗來定位 */
+  /* bottom: 20px;
+  right: 0px;
+  width: 120px;
+  background: white;  */
+}
+
+
+div.review div.reviewTime div.hslice h4 {
+  font-size: 20px;
+  text-align: center;
+  padding: 0px;
+  margin: 8px;
+  width: 100px;
+}
+
+div.review div.reviewTime div.inner-box h6 {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 8px;
+  text-align: center;
+  width: 100px;
+  color: #ED7D31;
+}
+
+div.review div.reviewTime div.inner-box h6:hover {
+  color: white;
+
+
+}
+
+/* ======快速向上鍵====== */
+#go_top {
+  width: 80px;
+  height: 80px;
+  border: 0;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: white;
+  background-color: #ED7D31;
+  border-radius: 50%;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2;
+}

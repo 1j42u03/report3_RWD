@@ -1,0 +1,123 @@
+footer {
+  /* border: 1px solid white; */
+  overflow: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #ED7D31;
+
+}
+
+ul.footer {
+  padding: 0;
+  width: 100%;
+  /* 使用百分比宽度，適用不同屏幕 */
+  text-align: center;
+
+}
+
+ul.smallF1 {
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+ul.smallF1 li.fTab {
+  margin: 0 4px;
+  list-style: none;
+
+}
+
+ul.smallF1 li.fTab a {
+  color: white;
+  border: 1px solid white;
+  padding: 4px;
+}
+
+
+
+ul.smallF2 {
+  display: flex;
+  justify-content: center;
+}
+
+ul.smallF2 li.fTabInfo {
+  margin: 8px;
+
+
+}
+
+li.fTabInfo a {
+  color: white;
+
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576.98px) {
+  .footer {
+    font-size: 8px;
+  }
+}
+
+
+/* ==粉專icon==
+
+footer ul.bigF1 li.ff2 ul.smallF2 li.fFb ::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  right: 4px;
+  bottom: 2px;
+
+  background-image: url(/個專/images/icon/facebook_white.png
+);
+  background-size: contain;
+  position: relative;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
+
+
+==信箱icon==
+footer ul.bigF1 li.ff2 ul.smallF2 li.fMail ::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  right: 4px;
+
+
+  background-image: url(/個專/images/icon/mail_white.png
+);
+  background-size: contain;
+  position: relative;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
+
+/* ==地址icon== */
+/* footer ul.bigF1 li.ff2 ul.smallF2 li.fLocation ::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  right: 4px;
+
+  background-image: url(/個專/images/icon/location_whiate.png
+);
+  background-size: contain;
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+
+}  */
