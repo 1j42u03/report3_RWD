@@ -5,7 +5,7 @@ div.index {
 }
 
 section.activity1 {
-  max-width: 800px;
+  width: 800px;
 }
 
 section.activity1 div.calendar iframe {
@@ -107,4 +107,12 @@ section.activity1 div.calendar iframe {
     bottom: 30px;
   }
 
+}
+
+@media screen and (max-width: 767.98px) {
+  div.tab_css label {
+    font-size: 16px;
+    margin: 0 4px;
+    padding: 10px 4px;
+  }
 }
